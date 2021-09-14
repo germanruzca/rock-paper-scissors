@@ -55,7 +55,7 @@ function jugar(user){
         alerta('You lose!', 'error')
         break;
     }
-    textMiddle.innerHTML =  "Escoge!";
+    textMiddle.innerHTML =  "Choose...";
   }, 800)
 }
 
