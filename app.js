@@ -46,13 +46,13 @@ function jugar(user){
     generateImage.src = `./img/${generate}.png`
     switch(result) {
       case TIE:
-        alerta('¡Empate!', 'warning')
+        alerta('Tie!', 'warning')
         break;
       case WIN:
-        alerta('¡Ganaste!', 'success')
+        alerta('You win!', 'success')
         break;
       case LOSE:
-        alerta('¡Perdiste!', 'error')
+        alerta('You lose!', 'error')
         break;
     }
     textMiddle.innerHTML =  "Escoge!";
@@ -77,7 +77,7 @@ function process(user, generate) {
 function alerta(text, icon) {
   setTimeout(()=> Swal.fire(
     text,
-    'Intenta otra vez',
+    'Try again',
     icon
   ),100)
   rockButton.style.filter = 'none'
